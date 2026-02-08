@@ -170,7 +170,16 @@ filter: brightness(0.7);
 z-index: 1;
 }
 
-/* Calculator Section - White background (from money house) with horizontally centered image */
+/* Kush Content - Moved down per user’s arrow */
+.kush-content {
+position: absolute;
+bottom: 15%;
+left: 50%;
+transform: translateX(-50%);
+width: 90%;
+}
+
+/* Calculator Section - White background with full tint, NO FOOTER */
 .calculator-section {
 background: #E8E5E0;
 }
@@ -185,6 +194,17 @@ background: #E8E5E0;
 z-index: 0;
 }
 
+/* Full section tint for calculator */
+.calculator-tint {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4);
+z-index: 2;
+}
+
 .calculator-image {
 position: absolute;
 left: 50%;
@@ -194,7 +214,7 @@ width: auto;
 height: 70vh;
 max-width: 900px;
 object-fit: contain;
-filter: brightness(0.7);
+filter: brightness(1);
 z-index: 1;
 }
 
@@ -218,24 +238,6 @@ box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 background: #f0f0f0;
 transform: translateY(-3px);
 box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-}
-
-/* Footer */
-.footer {
-padding: 30px 20px;
-text-align: center;
-background: #000;
-}
-
-.footer a {
-font-size: 12px;
-color: #666;
-text-decoration: none;
-transition: color 0.2s ease;
-}
-
-.footer a:hover {
-color: #999;
 }
 
 /* Responsive Design */
@@ -309,6 +311,10 @@ left: 30px;
     max-width: 400px;
 }
 
+.kush-content {
+    bottom: 12%;
+}
+
 .calculator-image {
     height: 50vh;
     max-width: 550px;
@@ -367,6 +373,10 @@ left: 20px;
     max-width: 300px;
 }
 
+.kush-content {
+    bottom: 10%;
+}
+
 .calculator-image {
     height: 45vh;
     max-width: 350px;
@@ -404,6 +414,10 @@ left: 15px;
 .kush-portrait {
     height: 50vh;
     max-width: 250px;
+}
+
+.kush-content {
+    bottom: 8%;
 }
 
 .calculator-image {
